@@ -58,12 +58,17 @@ The **FAKE engine** (Forensic Anti-bot & Knowledge Evaluation) identifies high-q
 
 > GitHub renders Mermaid automatically in Markdown.
 
-```mermaid
-flowchart TB
-  A[User Layer<br/>(Web / Mobile App)] --> B[Frontend (Client)<br/>React • TS • TailwindCSS • OnchainKit • Neynar]
-  B --> C[App / API Services<br/>Node (FUUM APIs) • FastAPI (FAKE Scoring) • Realtime Pub/Sub]
-  C --> D[FAKE Engine<br/>ML authenticity/quality/novelty • Vector DB (embeddings) • Feature Store/ETL]
-  D --> E[Data & Storage<br/>PostgreSQL • Redis • Object Store • IPFS/Arweave]
-  C --> F[Smart Contracts (Base)<br/>Solidity: VouchRegistry • FAKE Oracle • FUUM Minter • ClusterGuard • NFTs]
-  F --> G[Base L2 Blockchain]
-
+flowchart TD
+    A[User Layer: Web / Mobile App] --> B[FUUM Core]
+    B --> C[Smart Subscription Management (SSM)]
+    B --> D[Community Value System (CVS)]
+    B --> E[Liquidity & Incentives Engine (LIX)]
+    B --> F[Subscription Trading Marketplace (STM)]
+    C --> G[Flexible Subscription Controls]
+    C --> H[Custom Payment Models]
+    D --> I[Community Ownership & Rewards]
+    D --> J[Shared Value Pools]
+    E --> K[Liquidity Incentives]
+    E --> L[Tokenized Rewards System]
+    F --> M[Trade Subscriptions as Assets]
+    F --> N[Secondary Subscription Market]
